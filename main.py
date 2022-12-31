@@ -23,7 +23,7 @@ for n_servers in server_scenarios:
     # Initialize DQN agent
     server_keys = [i for i in range(n_servers)]
     num_actions = len(server_keys)
-    agent = Agent(gamma=0.89, epsilon=1.0, batch_size=batch_size,
+    agent = Agent(gamma=0.99, epsilon=1.0, batch_size=batch_size,
                   n_actions=num_actions, eps_end=0.003,
                   input_dims=[input_dims], lr=0.001)
 
