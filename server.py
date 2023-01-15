@@ -14,8 +14,9 @@ class Server(object):
         self.virtual_machines = {}
         self.server_id = server_id
         self.base_station = base_station
-        self.vms_hosting_cap = 7
+        self.vms_hosting_cap = 10
         self.MIPS = 700_000_000
+        self.memory_size = 16
         self.arrivals_t = []
         self.departs_t = []
         self.waits = []
